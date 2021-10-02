@@ -1,0 +1,70 @@
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+body{
+    background-color:rgba(180, 198, 231);
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+header{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background:linear-gradient(rgba(180, 198, 231),rgba(142,179,219));
+display: flex;
+justify-content: center;
+align-items: center;
+text-align:justify;
+}
+label{
+    margin-left: 42%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nom{
+    margin-left: 8.1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ap{
+    margin-left: 8.1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.espec{
+    margin-left: 6.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nac{
+    margin-left: 1.4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tel{
+    margin-left: 9.2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bar{
+    margin-left: 10.8%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+display: block;
+margin-left: auto;
+margin-right: auto;
+background:linear-gradient(rgba(180, 198, 231),rgba(17,28,180));
+border-color:rgba(180, 198, 231);
+color: white;
+font-size: 120%;
+width: 110px;
+height: 30px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display:inline-flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 120%;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
