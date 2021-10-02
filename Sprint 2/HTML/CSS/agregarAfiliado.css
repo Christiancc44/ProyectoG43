@@ -18,7 +18,7 @@ header{
 	text-align:justify;
 }
 label{
-    margin-left: 780px;
+    margin-left: 40%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #nombres{
@@ -27,14 +27,14 @@ label{
 #apellidos{
     margin-left: 124px;
 }
+#direccion{
+    margin-left: 127px;
+}
 #fecha{
-    margin-left: 29px;
+    margin-left: 60px;
 }
 #telefono{
     margin-left: 130px;
-}
-#direccion{
-    margin-left: 123px;
 }
 #barrio{
     margin-left: 148px;
@@ -45,19 +45,9 @@ button{
 	margin-right: auto;
 	background:linear-gradient(rgba(180, 198, 231),rgba(17,28,180));
 	border-color:rgba(180, 198, 231);
+    font-size: 102%;
     color: white;
 	width: 110px;
-    height: 30px;
-}
-.binf{
-	display: block;
-    margin: 9px;
-	/* margin-left: auto;
-	margin-right: auto; */
-	background:linear-gradient(rgba(180, 198, 231),rgba(17,28,180));
-	border-color:rgba(180, 198, 231);
-    color: white;
-	width: 120px;
     height: 30px;
 }
 a{
@@ -66,6 +56,8 @@ a{
 nav{
     display:inline-flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 750px;
-    margin-top: 10px;
+    font-size: 120%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
 }
