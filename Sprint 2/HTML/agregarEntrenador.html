@@ -1,60 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/agregarAfiliado.css">
+    <title>SIA - Agregar Docentes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<header>
-    <h1>Hard Body</h1>
-    <img src="IMG/Pesa2.png" alt="Pesa">
-</header>
-
-<body>
-    <nav class="menu1">
-        <a href="#"><button type="button">Inicio</button></a>
-        <a href="#"><button type="button">Afiliado</button></a>
-        <a href="#"><button type="button">Entrenador</button></a>
-        <a href="#"><button type="button">Salir</button></a>
+<body style="background-color:rgba(180, 198, 231);">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Agregar Entrenador</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Entrenador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Agregar entrenador</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Afiliado</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Salir</a>
+            </li>
+          </ul>
+            <span class="navbar-text ms-auto" id="horaActual"></span>
+            <span class="navbar-text ms-auto">Sistema de Información GIM.</span>
+            <img src="IMG/Pesa2.png" alt="Pesa" width="50" height="50">
+        </div>
+      </div>
     </nav>
-    <br>
-    <h2>Agregar entrenador</h2>
-    <div>
-        <form action="#">
-            <label for="Enombres">Nombres:</label>
-            <input type="text" id="Enombres">
-            <br>
-            <br>
-            <label for="Eapellidos">Apellidos:</label>
-            <input type="text" id="Eapellidos">
-            <br>
-            <br>
-            <label for="especialidad">especialidad</label>
-            <input type="text" id="especialidad">
-            <br>
-            <br>
-            <label for="Efecha">fecha de nacimiento</label>
-            <input type="text" id="fecha">
-            <br>
-            <br>
-            <label for="Etelefono">Teléfono:</label>
-            <input type="text" id="telefono">
-            <br>
-            <br>
-            <label for="Ebarrio">Barrio:</label>
-            <input type="text" id="barrio">
-            <br>
-            <br>
-            <nav>
-                <a href="#"><button class="binf" type="button">Agregar</button></a>
-                <a href="#"><button class="binf" type="button">Editar</button></a>
-                <a href="#"><button class="binf" type="button">Modificar Estado</button></a>
-            </nav>
-        </form>
-    </div>
-</body>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <form action="#">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="Enombre">
+              <label for="Enombres">Nombres</label>
+            </div>
+
+            
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="Eapellido">
+              <label for="Eapellido">Apellidos</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="Especialidad">
+              <label for="Especialidad">Especialidad</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input class="form-control" type="date" id="Efechanaci">
+                <label for="Efechanaci">Fecha nacimiento</label>
+              </div>
+            
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" id="Etelefono">
+              <label for="Etelefono">Teléfono</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="Ebarrio">
+              <label for="Ebarrio">Barrio</label>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="basicToastBtn">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--copie el codigo que traje de toat codepedBootstrap5-->
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-primary text-light">
+          <h5 class="my-0">Se guardó correctamente</h5>
+        </div>
+      </div>  
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',
+        function() { 
+          var fechaActual = new Date();
+          document.querySelector("#horaActual").innerHTML = "<strong>"+fechaActual.getHours()+":"+fechaActual.getMinutes()+"</strong>";
+        }
+        );
+    </script>
+</body>
 </html>

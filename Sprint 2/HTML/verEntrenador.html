@@ -5,55 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/verAfiliado.css">
+    <title>SIA - inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
-<header>
-    <h1>Hard Body</h1>
-    <img src="IMG/Pesa2.png" alt="Pesa">
-</header>
-
-<body>
-    <nav>
-        <a href="#"><button type="button">Inicio</button></a>
-        <a href="#"><button type="button">Reporte</button></a>
-        <a href="#"><button type="button">Salir</button></a>
+<body style="background-color:rgba(180, 198, 231);">
+    <!-- Aquí va el navbar y todooooooo lo demás. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ver Entrenador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrenador</a>
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#">ver entrenador</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Afiliado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Salir</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ms-auto" id="horaActual"></span>
+                <span class="navbar-text ms-auto">Sistema de Información GIM.</span>
+                <img src="IMG/Pesa2.png" alt="Pesa" width="50" height="50">
+            </div>
+        </div>
     </nav>
-    <br>
-    <h2>Ver entrenador</h2>
-    <div>
-        <form action="#">
-            <br>
-            <label for="ID">ID</label>
-            <label class="EID">1050236523</label>
-            <br>
-            <label for="Enombres">Nombres:</label>
-            <label class="enom">maria isabel.</label>
-            <br>
-            <br>
-            <label for="Eapellidos">Apellidos:</label>
-            <label class="ap">escobar gabiria</label>
-            <br>
-            <br>
-            <label for="Eespecialidad">especialidad:</label>
-            <label class="especiali">Spinning</label>
-            <br>
-            <br>
-            <label for="Efecha">Fecha de Nacimiento:</label>
-            <label class="fec">12/01/1990</label>
-            <br>
-            <br>
-            <label for="Etelefono">Teléfono:</label>
-            <label class="tel">3105878963</label>
-            <br>
-            <br>
-            <label for="Ebarrio">Barrio:</label>
-            <label class="bar">suba</label>
-            <br>
-            <br>
-            <button type="button"><b>Agregar</b></button>
-        </form>
-    </div>
-</body>
 
+    <div class="container">
+        <div class="row">
+            <div style="background-color:rgb(199, 199, 199);" class="col-3 alinear">
+                            <p>Nombres: maria isabel</p>
+                            <p>Apellidos: escobar gabiria</p>
+                            <p>especialidad: Spining</p>
+                            <p>Fecha de Nacimiento:12/01/1990 </p>
+                            <p>Telefono: 3105878963</p>
+                            <p>Barrio: suba</p>
+            </div>
+            <div>
+            <!-- aqui vamos a crear los enlaces -->
+            <a href="#" class="btn btn-primary">Entrenador</a>
+            <a href="#" class="btn btn-primary">Afiliado</a>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded',
+    function() { 
+      var fechaActual = new Date();
+      document.querySelector("#horaActual").innerHTML = "<strong>"+fechaActual.getHours()+":"+fechaActual.getMinutes()+"</strong>";
+    }
+    );
+</script>
 </html>
+

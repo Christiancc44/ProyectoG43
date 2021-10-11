@@ -2,81 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/afiliado.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIA - Docentes</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<header>
-    <h1>Hard Body</h1>
-    <img src="IMG/Pesa2.png" alt="Pesa">
-</header>
 
-<body>
-    <nav class="emenu" >
-        <a href="#"><button type="button">Inicio</button></a>
-        <a href="#"><button type="button">Afiliado</button></a>
-        <a href="#"><button type="button">Entrenador</button></a>
-        <a href="#"><button type="button">Salir</button></a>
+<body style="background-color:rgba(180, 198, 231);">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Entrenador</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav   mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Entrenador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Afiliado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Salir</a>
+            </li>
+          </ul>
+            <span class="navbar-text ms-auto" id="horaActual"></span>
+            <span class="navbar-text ms-auto">Sistema de Información GIM.</span>
+            <img src="IMG/Pesa2.png" alt="Pesa" width="50" height="50">
+        </div>
+      </div>
     </nav>
-    <br>
-    <h2>Entrenador</h2>
-    <table class="etable">
-        <tr>
-            <th>ID</th>
-            <th>NOMBRES</th>
-            <th>APELLIDOS</th>
-            <th>ESPECIALIDAD</th>
-            <th>AÑO DE NACIMIENTO</th>
-            <th>TELEFONO</th>
-            <th>BARRIO ENTRENADOR</th>
-        </tr>
-        <tr>
-            <td>1050236523</td>
-            <td>maria isabel </td>
-            <td>escobar gabiria</td>
-            <td>Spinning</td>
-            <td>12/01/1990</td>
-            <td>3105878963</td>
-            <td>suba</td>
-        </tr>
-        <tr>
-            <td>15896243</td>
-            <td>fernanda maria </td>
-            <td>escocia velez</td>
-            <td>Tonificación</td>
-            <td>15/07/1989</td>
-            <td>3105863256</td>
-            <td>venecia</td>
-        </tr>
-        <tr>
-            <td>1489565023</td>
-            <td>eliana camila</td>
-            <td>garzon rubio</td>
-            <td>Musculación</td>
-            <td>02/05/1989</td>
-            <td>3115698635</td>
-            <td>chapinero</td>
-            <td>
-                <button type="button" class="EM">
-                    E
-                </button>
-                <button type="button" class="EM">
-                    M
-                </button>
-        </tr>
-        
-    </table>
-    <br>
-    <br>
-    <div>
-        <form action="#">
-            <nav>
-            <button type="button"><b>Agregar</b></button>
-            </nav>
-        </form>
+<div class="container">
+  <div class="row">
+      <div>
+        <button type="button" class="btn btn-primary">Agregar</button>
+      </div>
+    <div style="background-color:rgb(199, 199, 199);" class="col-12">          
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="mt-5">Id</th>
+                <th>NOMBRES</th>
+                <th>APELLIDOS</th>
+                <th>ESPECIALIDAD</th>
+                <th>AÑO DE NACIMIENTO</th>
+                <th>TELEFONO</th>
+                <th>BARRIO ENTRENADOR</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1050236523</td>
+                    <td>maria isabel </td>
+                    <td>escobar gabiria</td>
+                    <td>Spinning</td>
+                    <td>12/01/1990</td>
+                    <td>3105878963</td>
+                    <td>suba</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" id="basicToastBtn">
+                            <i class="fas fa-user-minus"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15896243</td>
+                    <td>fernanda maria </td>
+                    <td>escocia velez</td>
+                    <td>Tonificación</td>
+                    <td>15/07/1989</td>
+                    <td>3105863256</td>
+                    <td>venecia</td>
+                    <td>
+                    <button type="button" class="btn btn-warning">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger" id="basicToastBtn">
+                        <i class="fas fa-user-minus"></i>
+                    </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1489565023</td>
+                    <td>eliana camila</td>
+                    <td>garzon rubio</td>
+                    <td>Musculación</td>
+                    <td>02/05/1989</td>
+                    <td>3115698635</td>
+                    <td>chapinero</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" id="basicToastBtn">
+                            <i class="fas fa-user-minus"></i>
+                        </button>
+                    </td>
+              </tr>
+            </tbody>
+          </table>
     </div>
-</body>
+  </div>
+</div>
+<div class="toast-container position-fixed top-0 end-0 p-3">
+  <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-primary text-light">
+      <h5 class="my-0">Se cambió de estado correctamente</h5>
+    </div>
+  </div>  
+</div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded',
+    function() { 
+      var fechaActual = new Date();
+      document.querySelector("#horaActual").innerHTML = "<strong>"+fechaActual.getHours()+":"+fechaActual.getMinutes()+"</strong>";
+    }
+    );
+</script>
+</body>
 </html>
+
+
