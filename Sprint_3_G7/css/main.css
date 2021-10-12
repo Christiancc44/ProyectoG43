@@ -1,0 +1,21 @@
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+body{
+    background-color:rgba(180, 198, 231);
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+  }
+  
+  .form {
+    width: 450px;
+  }

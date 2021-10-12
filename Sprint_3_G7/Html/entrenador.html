@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIG-Entrenador</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/entrenador.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Entrenador</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav   mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Entrenador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Afiliado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Salir</a>
+            </li>
+          </ul>
+            <span class="navbar-text ms-auto" id="horaActual"></span>
+            <span class="navbar-text ms-auto">Hard Body</span>
+            <img src="imagen/Pesa2.png" alt="Pesa" width="50" height="50">
+        </div>
+      </div>
+    </nav>
+    <div class="container"> 
+      <div class="row"> 
+      <div class="col-12"> 
+          <table class="table alinear"> 
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="mt-5">Id</th>
+                <th>NOMBRES</th>
+                <th>APELLIDOS</th>
+                <th>ESPECIALIDAD</th>
+                <th>AÑO DE NACIMIENTO</th>
+                <th>TELÉFONO</th>
+                <th>BARRIO </th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan Andrés</td>
+                    <td>Garcia</td>
+                    <td>Crossfit</td>
+                    <td>04/22/1990</td>
+                    <td>3214588996</td>
+                    <td>San Juan</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" id="basicToastBtn">
+                            <i class="fas fa-user-minus"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Calos Manuel</td>
+                    <td>Ruiz V.</td>
+                    <td>Spartan Training</td>
+                    <td>11/15/1994</td>
+                    <td>3102577432</td>
+                    <td>La Cruz</td>
+                    <td>
+                    <button type="button" class="btn btn-warning">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger" id="basicToastBtn">
+                        <i class="fas fa-user-minus"></i>
+                    </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Francisco</td>
+                    <td>Mieles S.</td>
+                    <td>Aerobic Fisico</td>
+                    <td>07/07/1992</td>
+                    <td>3002596364</td>
+                    <td>Guayabal</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" id="basicToastBtn">
+                            <i class="fas fa-user-minus"></i>
+                        </button>
+                    </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Cesar David</td>
+                <td>Suarez M.</td>
+                <td>Calistenia</td>
+                <td>16/09/1991</td>
+                <td>3051985000</td>
+                <td>San Luis</td>
+                <td>
+                <button type="button" class="btn btn-warning">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button type="button" class="btn btn-danger" id="basicToastBtn">
+                    <i class="fas fa-user-minus"></i>
+                </button>
+                </td>
+            </tr>
+            </tbody>
+          </table>
+          
+    </div>
+  </div>
+</div>
+<div class="toast-container position-fixed top-0 end-0 p-3">
+  <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-primary text-light">
+      <h5 class="my-0">Se cambió de estado correctamente</h5>
+    </div>
+  </div>  
+</div>
+
+<div class="container">
+    <div class="row">
+        <div>
+          <button type="button" class="btn btn-primary">Agregar</button>
+        </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

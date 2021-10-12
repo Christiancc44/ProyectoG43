@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(180, 198, 231);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin-top: -1%;
+}
+.form-row{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    width: 300px;
+}
+.btn-primary{ 
+
+    margin-top: 2%; 
+
+    display: flex; 
+
+    margin-left: auto; 
+
+    margin-right: auto; 
+
+} 
