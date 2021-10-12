@@ -72,3 +72,9 @@ td{
     height: 20px;
     text-align: center;
 }
+
+.alinear{
+	
+	/* text-align alinea horizontalmente.*/
+	text-align: center;
+}
