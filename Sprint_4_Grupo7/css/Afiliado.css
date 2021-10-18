@@ -1,0 +1,24 @@
+td,tr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+body{
+    background-color: rgba(180, 198, 231);
+}
+.btn-primary{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin-top: -1%;
+}
+table{
+    margin-top: 2%;
+    background-color: rgba(225,225,225);
+}
+thead{
+    background-color:rgba(180, 198, 231);
+}
