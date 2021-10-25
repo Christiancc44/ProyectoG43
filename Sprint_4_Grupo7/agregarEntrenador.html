@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIG - Agregar Entrenador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/entrenador.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Agregar Entrenador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Entrenador</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#">Afiliado</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Salir</a>
+                  </li>
+                </ul>
+                  <span class="navbar-text ms-auto" id="horaActual"></span>
+                  <span class="navbar-text ms-auto">Hard Body</span>
+                  <img src="imagen/Pesa2.png" alt="Pesa" width="50" height="50">
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <div class="row">
+              <div class="col-7">
+                <form action="#">
+                <br>
+                <br>
+                <br>
+                  <form> 
+                      <div class="form-group row"> 
+                          <label for="inputNombre" class="col-sm-2 col-form-label">Nombres:</label> 
+                          <div class="col-sm-10"> 
+                              <input type="text" class="form-group" id="inputNombre"> 
+                          </div>
+                      </div> 
+                        <div class="form-group row">
+                          <label for="inputApellido" class="col-sm-2 col-form-label">Apellidos:</label>
+                          <div class="col-sm-10"> 
+                              <input type="text" class="form-group" id="inputApellido">
+                            </div> 
+                      </div> 
+                      <div class="form-group row"> 
+                          <label for="inputEspecialidad" class="col-sm-2 col-form-label">Especialidad:</label>
+                          <div class="col-sm-10"> 
+                              <select style="background-color:rgb(249, 251, 255)"" id="inputEspecialidad" class="ms-auto">
+                                <option selected>escoje una opcion</option>
+                                <option value="1">Crossfit</option>
+                                <option value="2">Spartan Training</option>
+                                <option value="3">Aerobic Fisico</option>
+                                <option value="3">Calistenia</option>
+                              </select>
+                          </div> 
+                      </div>  
+                      <div class="form-group row"> 
+                          <label for="inputAño" class="col-sm-2 col-form-label">Año de Nacimiento:</label> 
+                          <div class="col-sm-10"> 
+                          <input type="text" class="form-group" id="inputAño"> 
+                          </div> 
+                      </div> 
+                      <div class="form-group row"> 
+                          <label for="inputTel" class="col-sm-2 col-form-label">Teléfono:</label> 
+                          <div class="col-sm-10"> 
+                          <input type="text" class="form-group" id="inputTel"> 
+                          </div> 
+                      </div> 
+                      <div class="form-group row"> 
+                        <label for="inputBarrio" class="col-sm-2 col-form-label">Barrio:</label> 
+                        <div class="col-sm-10"> 
+                        <input type="text" class="form-group" id="inputBarrio"> 
+                        </div> 
+                    </div> 
+                    <br>
+                    <br>
+    <div class="form-group row">
+        <div class="agregar">
+            <button type="submit" class="btn btn-primary" id="basicToastBtn">Agregar</button>
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                <div id="basicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-primary text-light">
+                        <h5 class="my-0">Se agrego correctamente</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/agregarAfiliado.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
