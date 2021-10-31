@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(180, 198, 231);
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin-top: -1%;
+}
+form{
+    margin-top: 1%;
+}
+.col-sm-10{
+    margin-right: -50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    margin-left: 35%;
+}
+.agregar{
+    margin-top: 2%;
+    text-align: center;
+}

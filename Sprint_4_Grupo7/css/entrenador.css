@@ -1,0 +1,59 @@
+/*hoja entrenador*/
+
+td,tr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+body{
+    background-color: rgba(180, 198, 231);
+}
+.btn-primary{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin-top: -1%;
+}
+table{
+    margin-top: 2%;
+    background-color: rgba(225,225,225);
+}
+thead{
+    background-color:rgba(180, 198, 231);
+}
+
+/*AgregarEntrenador*/
+
+form{
+    margin-top: 1%;
+}
+.col-sm-10{
+    margin-right: -50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    margin-left: 35%;
+}
+.agregar{
+    margin-top: 2%;
+    text-align: center;
+}
+
+/*VerEntrenador*/
+
+.form-row{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    width: 300px;
+}
+.btn-primary{
+    margin-top: 2%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,44 @@
+body{ 
+
+    background-color: rgba(180, 198, 231); 
+
+} 
+
+img{ 
+
+    width: 60px; 
+
+    height: 60px; 
+
+    margin-top: -1%; 
+
+} 
+
+form{ 
+
+    margin-top: 3%; 
+    margin-left: 180px;
+
+} 
+
+.col-sm-10{ 
+
+    margin-right: -100%; 
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+
+} 
+
+label{ 
+
+    margin-left: 35%; 
+
+} 
+
+.agregar{ 
+
+    margin-top: 8%; 
+
+    text-align: right; 
+
+} 
